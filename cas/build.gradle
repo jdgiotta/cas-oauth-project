@@ -45,6 +45,9 @@ dependencies {
     compile "org.apereo.cas:cas-server-webapp-tomcat:${project.'cas.version'}@war"
     if (!project.hasProperty('bootiful')) {
         // Other dependencies may be listed here...
+        compile "org.apereo.cas:cas-server-support-generic:${project.'cas.version'}"
+        compile "org.apereo.cas:cas-server-support-oauth-webflow:${project.'cas.version'}"
+        compile "org.apereo.cas:cas-server-support-json-service-registry:${project.'cas.version'}"
     } else {
         println "Running CAS in Bootiful mode; all dependencies except the CAS web application are ignored."
     }
