@@ -2,9 +2,10 @@
   "@class" : "org.apereo.cas.support.oauth.services.OAuthRegisteredService",
   "clientId": "oauthclient",
   "clientSecret": "secret",
-  "bypassApprovalPrompt": false,
-  "serviceId" : "^(https?|imaps?):.*",
+  "bypassApprovalPrompt": true,
+  "serviceId" : "^(https?|imaps?)\/\/:.*",
   "name" : "OAuthTest",
   "id" : 1001,
-  "evaluationOrder" : 1
+  "evaluationOrder" : 1,
+  "jsonFormat": true
 }

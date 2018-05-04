@@ -58,6 +58,9 @@ task copyConfig(type: Copy, description: "Copy CAS configuration over to /etc/ca
         from "${project.rootDir}/etc/cas/config"
         into '/etc/cas/config'
 
+        from "${project.rootDir}/etc/cas/services"
+        into '/etc/cas/services'
+
         println "Copied configuration files into /etc/cas/config"
     }
 }
